@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 public class stringi {
-    static int num1, num2;
+    static float num1, num2;
     static String a, b, q, j;
     static char operation;
-    static int result;
+    static float result;
 
 public static void main(String[] args) {
     System.out.println("Введите операцию через пробел, Господин.");
@@ -558,9 +558,7 @@ public static void main(String[] args) {
     if (q.equals(roman[10] + " / " + roman[9])) {System.out.println(roman[1]);}
     if (q.equals(roman[10] + " / " + roman[10])) {System.out.println(roman[1]);}
 
-
     else {
-
 
     String[] e = q.split(" ");                                // делим строчку по пробелам
 
@@ -582,9 +580,9 @@ public static void main(String[] args) {
         else {System.out.println("SORRY, I CAN'T SCAN IT");        // <---- выводит, если число не вписывается в 1-10
                    }}}
 
-    public static int calc (int num1, int num2, char op) {
+    public static float calc (float num1, float num2, char op) {
 
-        int result = 0;
+        float result = 0;
         switch (op) {
             case '+':
                 result = num1 + num2;
@@ -596,6 +594,8 @@ public static void main(String[] args) {
                 result = num1 * num2;
                 break;
             case '/':
+                result = num1 / num2;
+                break;
         }
         return result; }}
 
